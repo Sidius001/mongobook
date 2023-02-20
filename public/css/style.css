@@ -1,0 +1,141 @@
+main{
+  text-align:center;
+}
+
+.container h2, .container h1{
+  text-align:center;
+}
+
+.nav-wrapper{
+  padding:0 1.6rem;
+}
+
+.card .card-content{
+  padding:1rem .8rem;
+  border-radius:0 0 2px 2px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.card .card-content .card-title{
+  line-height:1.4rem;
+}
+
+.card .card-title{
+  font-size:1.2rem;
+  font-weight:600;
+  text-align:center;
+}
+
+.price{
+  font-weight:600;
+  font-size:1.2rem;
+}
+
+.price::after{
+  content:'UAH';
+  margin-left:4px;
+  font-size:1rem;
+  font-weight:400;
+}
+
+.card .card-action{
+  text-align:center;
+}
+
+.brand-logo img{
+  width:40px;
+  display:inline-block;
+  margin-top:.8rem;
+}
+
+.card-image img{
+  height:285px;
+  object-fit:cover;
+}
+
+/* CART options */
+.cart{
+  text-align:center;
+  padding-bottom:15px;
+  border-bottom:1px solid #009a9a;
+}
+
+.card .card-action a{
+  margin-right:0!important;
+  display:block;
+  margin-bottom:8px;
+}
+
+.card .card-action a i{
+  font-style:normal;
+}
+
+.card .card-action a:hover i{
+  border-bottom:1px solid #ffab40;
+}
+
+/* Basket empty */
+.basket-empty{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.basket-empty img{
+  width:64px;
+  margin:15px 0;
+}
+
+.basket-empty a:hover{
+  text-decoration:underline;
+}
+
+.basket-act{
+  text-align:center;
+}
+
+.bk-orders{
+  text-align:center;
+}
+
+p.total{
+  text-align:center;
+}
+
+/* Authentication */
+.auth{padding-top:0.2rem;}
+
+.reg-err{ display:table; margin:0 auto; }
+.reg-err p{
+  text-align:center; 
+  background-color:#F44336; 
+  color:#f0f8ff;
+  border-radius:5px; 
+  padding:.5rem 1rem;
+}
+
+/* 404 */
+.page__404{
+  text-align:center;
+}
+
+.not-found{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  align-items:center;
+}
+
+.not-found span{
+  font-size:2rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Profile */
+.avatar{
+  max-width:300px;
+  height:auto;
+}

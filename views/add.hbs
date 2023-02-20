@@ -1,0 +1,20 @@
+<h2>Добавить книгу</h2>
+{{#if error}}
+  <div class="reg-err"><p>{{error}}</p></div>
+{{/if}}
+<form action="/add" method="post">
+  <div class="input-field">
+    <input placeholder="Название:" id="title" name="title" type="text" class="validate" value="{{data.title}}">
+    <label for="first_name">Название книги:</label>
+  </div>
+  <div class="input-field">
+    <input placeholder="Цена" id="price" name="price" type="number" class="validate" value="{{data.price}}">
+    <label for="first_name">Цена книги (UAH):</label>
+  </div>
+  <div class="input-field">
+    <input name="image" placeholder="Ссылка на обложку" id="image" type="text" class="validate" value="{{data.image}}">
+    <label for="first_name">Ссылка на фото обложки:</label>
+  </div>
+  <input type="hidden" name="_csrf" value="{{@root.csrf}}">
+  <button class="btn btn-primary">Добавить книгу</button>
+</form>
