@@ -28,7 +28,7 @@ const userMid = require('./middleware/user');
 
 //server connect:
 
-const PORT = process.env.port || 80;
+const PORT = process.env.RUNNING_PORT || 80;
 
 
 async function start(){
