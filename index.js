@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const csurf = require('csurf');
 const flash = require('connect-flash');
-const dotenv = require('dotenv').config();
+require('dotenv').config({path:"./keys/index"});
 const mongoose = require('mongoose');
 const helmet = require('helmet');
 const compression = require('compression');
