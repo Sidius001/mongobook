@@ -43,6 +43,10 @@ main{
 
 .card .card-action{
   text-align:center;
+  /* Выравниваем элементы по высоте */
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 }
 
 .brand-logo img{

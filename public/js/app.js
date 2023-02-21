@@ -1,4 +1,5 @@
 const elems = document.querySelectorAll('.card-content');
+const card = document.querySelectorAll('.card-action');
 
 function equalHeight(arr){
   let len = 0;
@@ -10,6 +11,7 @@ function equalHeight(arr){
 }
 
 equalHeight(elems);
+equalHeight(card);
 
 const parseDate = date =>{
   return new Intl.DateTimeFormat('uk-UK', {

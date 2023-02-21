@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const csurf = require('csurf');
 const flash = require('connect-flash');
+const dotenv = require('dotenv').config();
 const mongoose = require('mongoose');
 const helmet = require('helmet');
 const compression = require('compression');
@@ -26,13 +27,14 @@ const userMid = require('./middleware/user');
 
 
 //server connect:
+
 const PORT = process.env.port || 80;
 const HOST = process.env.HOST || '127.0.0.2';
 
 
 async function start(){
   try{
-    await mongoose.connect(keys.MONGODB_URI, {useNewUrlParser:true, dbName:'bookshop'});
+    await mongoose.connect(keys.MONGODB_URI, {useNewUrlParser:true, dbName:'IBook'});
     mongoose.set('strictQuery', false);    
     app.listen(PORT, HOST, ()=>{
       console.log(`Server running on host: ${HOST} with port: ${PORT}`);
