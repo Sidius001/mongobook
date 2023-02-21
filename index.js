@@ -28,8 +28,8 @@ const userMid = require('./middleware/user');
 
 //server connect:
 
-const PORT = process.env.RUNNING_PORT || 80;
-const HOST = process.env.HOST || '3.125.183.140' || '3.75.158.163' || '35.157.117.28';
+const PORT = process.env.PORT || 80;
+const HOST = process.env.HOST || localhost;
 
 async function start(){
   try{
