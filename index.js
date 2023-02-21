@@ -28,8 +28,7 @@ const userMid = require('./middleware/user');
 
 //server connect:
 
-const PORT = process.env.port || 80;
-const HOST = process.env.HOST || '127.0.0.2';
+const PORT = process.env.port;
 
 
 async function start(){
@@ -37,7 +36,7 @@ async function start(){
     await mongoose.connect(keys.MONGODB_URI, {useNewUrlParser:true, dbName:'IBook'});
     mongoose.set('strictQuery', false);    
     app.listen(PORT, HOST, ()=>{
-      console.log(`Server running on host: ${HOST} with port: ${PORT}`);
+      console.log(`Server running on port: ${PORT}`);
     });
   }
   catch(err){
