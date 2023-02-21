@@ -35,7 +35,7 @@ async function start(){
   try{
     await mongoose.connect(keys.MONGODB_URI, {useNewUrlParser:true, dbName:'IBook'});
     mongoose.set('strictQuery', false);    
-    app.listen(PORT, ()=>{
+    app.listen(PORT, HOST, ()=>{
       console.log(`Server running on port: ${PORT}`);
     });
   }
