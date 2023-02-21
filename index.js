@@ -29,13 +29,12 @@ const userMid = require('./middleware/user');
 //server connect:
 
 const PORT = process.env.PORT || 80;
-const HOST = process.env.HOST || localhost;
 
 async function start(){
   try{
     await mongoose.connect(keys.MONGODB_URI, {useNewUrlParser:true, dbName:'IBook'});
     mongoose.set('strictQuery', false);    
-    app.listen(PORT, HOST, ()=>{
+    app.listen(PORT, ()=>{
       console.log(`Server running on port: ${PORT}`);
     });
   }
